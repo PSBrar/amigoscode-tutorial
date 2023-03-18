@@ -3,6 +3,9 @@ server:
   error:
     include-message: always
 
+aws:
+  region: eu-west-1
+
 cors:
   allowed-origins: "*"
   allowed-methods: "*"
