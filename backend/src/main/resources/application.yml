@@ -3,6 +3,12 @@ server:
   error:
     include-message: always
 
+aws:
+  region: eu-west-1
+  s3:
+    buckets:
+      customer: tutorial-test-bucket-prab
+
 cors:
   allowed-origins: "*"
   allowed-methods: "*"
