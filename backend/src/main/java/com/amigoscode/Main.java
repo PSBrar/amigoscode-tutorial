@@ -32,6 +32,7 @@ public class Main {
             createRandomCustomer(customerRepository, passwordEncoder);
         };
     }
+
     private static void testUploadDownload(S3Service s3Service, S3Buckets s3Buckets) {
         s3Service.putObject(
                 s3Buckets.getCustomer(),
