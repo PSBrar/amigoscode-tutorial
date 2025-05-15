@@ -1,5 +1,7 @@
 package com.amigoscode.customer;
 
+import com.amigoscode.customer.types.Customer;
+import com.amigoscode.customer.types.Gender;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Component;
 
@@ -16,6 +18,7 @@ public class CustomerRowMapper implements RowMapper<Customer> {
                 rs.getString("email"),
                 rs.getString("password"),
                 rs.getInt("age"),
-                Gender.valueOf(rs.getString("gender")));
+                Gender.valueOf(rs.getString("gender")),
+                rs.getString("profile_image_id"));
     }
 }

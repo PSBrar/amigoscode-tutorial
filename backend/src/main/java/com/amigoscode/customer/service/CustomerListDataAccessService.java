@@ -1,5 +1,8 @@
-package com.amigoscode.customer;
+package com.amigoscode.customer.service;
 
+import com.amigoscode.customer.CustomerDao;
+import com.amigoscode.customer.types.Customer;
+import com.amigoscode.customer.types.Gender;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
@@ -81,6 +84,11 @@ public class CustomerListDataAccessService implements CustomerDao {
         return customers.stream()
                 .filter(c -> c.getUsername().equals(email))
                 .findFirst();
+    }
+
+    @Override
+    public void updateCustomerProfileImageId(String profileImageId, Integer customerId){
+        //TODO: Implement this method
     }
 
 }

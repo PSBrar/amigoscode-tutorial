@@ -1,5 +1,8 @@
-package com.amigoscode.customer;
+package com.amigoscode.customer.service;
 
+import com.amigoscode.customer.CustomerDao;
+import com.amigoscode.customer.CustomerRepository;
+import com.amigoscode.customer.types.Customer;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Repository;
@@ -55,6 +58,11 @@ public class CustomerJPADataAccessService implements CustomerDao {
     @Override
     public Optional<Customer> selectUserByEmail(String email) {
         return customerRepository.findCustomerByEmail(email);
+    }
+
+    @Override
+    public void updateCustomerProfileImageId(String profileImageId, Integer customerId){
+        customerRepository.updateProfileImageId(profileImageId, customerId);
     }
 
 }
