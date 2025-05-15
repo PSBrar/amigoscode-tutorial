@@ -2,6 +2,8 @@ package com.amigoscode.customer;
 
 import com.amigoscode.AbstractTestcontainers;
 import com.amigoscode.TestConfig;
+import com.amigoscode.customer.types.Customer;
+import com.amigoscode.customer.types.Gender;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

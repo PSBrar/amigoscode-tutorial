@@ -1,5 +1,9 @@
 package com.amigoscode.customer;
 
+import com.amigoscode.customer.service.CustomerService;
+import com.amigoscode.customer.types.CustomerDTO;
+import com.amigoscode.customer.types.CustomerRegistrationRequest;
+import com.amigoscode.customer.types.CustomerUpdateRequest;
 import com.amigoscode.jwt.JWTUtil;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;

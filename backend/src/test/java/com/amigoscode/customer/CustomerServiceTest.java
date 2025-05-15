@@ -1,5 +1,7 @@
 package com.amigoscode.customer;
 
+import com.amigoscode.customer.service.CustomerService;
+import com.amigoscode.customer.types.*;
 import com.amigoscode.exception.DuplicateResourceException;
 import com.amigoscode.exception.RequestValidationException;
 import com.amigoscode.exception.ResourceNotFoundException;

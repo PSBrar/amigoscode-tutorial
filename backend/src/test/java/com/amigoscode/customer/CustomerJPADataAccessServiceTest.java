@@ -1,6 +1,10 @@
 package com.amigoscode.customer;
 
 import java.util.List;
+
+import com.amigoscode.customer.service.CustomerJPADataAccessService;
+import com.amigoscode.customer.types.Customer;
+import com.amigoscode.customer.types.Gender;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

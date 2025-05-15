@@ -1,6 +1,9 @@
 package com.amigoscode.journey;
 
-import com.amigoscode.customer.*;
+import com.amigoscode.customer.types.CustomerDTO;
+import com.amigoscode.customer.types.CustomerRegistrationRequest;
+import com.amigoscode.customer.types.CustomerUpdateRequest;
+import com.amigoscode.customer.types.Gender;
 import com.github.javafaker.Faker;
 import com.github.javafaker.Name;
 import org.junit.jupiter.api.Test;

@@ -1,6 +1,9 @@
 package com.amigoscode.customer;
 
 import com.amigoscode.AbstractTestcontainers;
+import com.amigoscode.customer.service.CustomerJDBCDataAccessService;
+import com.amigoscode.customer.types.Customer;
+import com.amigoscode.customer.types.Gender;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

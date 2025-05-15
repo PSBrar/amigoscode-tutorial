@@ -1,7 +1,7 @@
 package com.amigoscode.auth;
 
-import com.amigoscode.customer.Customer;
-import com.amigoscode.customer.CustomerDTO;
+import com.amigoscode.customer.types.Customer;
+import com.amigoscode.customer.types.CustomerDTO;
 import com.amigoscode.customer.CustomerDTOMapper;
 import com.amigoscode.jwt.JWTUtil;
 import org.springframework.security.authentication.AuthenticationManager;

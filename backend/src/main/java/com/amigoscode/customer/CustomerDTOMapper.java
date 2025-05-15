@@ -1,5 +1,7 @@
 package com.amigoscode.customer;
 
+import com.amigoscode.customer.types.Customer;
+import com.amigoscode.customer.types.CustomerDTO;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.stereotype.Service;
 

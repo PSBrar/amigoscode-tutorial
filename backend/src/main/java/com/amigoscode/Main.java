@@ -1,8 +1,8 @@
 package com.amigoscode;
 
-import com.amigoscode.customer.Customer;
+import com.amigoscode.customer.types.Customer;
 import com.amigoscode.customer.CustomerRepository;
-import com.amigoscode.customer.Gender;
+import com.amigoscode.customer.types.Gender;
 import com.amigoscode.s3.S3Buckets;
 import com.amigoscode.s3.S3Service;
 import com.github.javafaker.Faker;

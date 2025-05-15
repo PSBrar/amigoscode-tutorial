@@ -1,5 +1,7 @@
 package com.amigoscode.customer;
 
+import com.amigoscode.customer.types.Customer;
+import com.amigoscode.customer.types.Gender;
 import org.junit.jupiter.api.Test;
 
 import java.sql.ResultSet;

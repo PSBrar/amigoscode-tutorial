@@ -1,4 +1,4 @@
-package com.amigoscode.customer;
+package com.amigoscode.customer.types;
 
 import java.util.List;
 
