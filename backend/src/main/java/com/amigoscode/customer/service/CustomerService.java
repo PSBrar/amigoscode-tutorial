@@ -138,17 +138,22 @@ public class CustomerService {
         catch(IOException e){
             throw new RuntimeException("customer image upload failed", e);
         }
-        //TODO: Store imageId to postgres
+
+        customerDao.updateCustomerProfileImageId(imageId, customerId);
     }
 
     public byte[] getProfileImage(Integer customerId) {
         CustomerDTO customer = getCustomer(customerId);
 
-        //TODO: Check if imageId is empty or null
+        if (customer.profileImageId().isBlank()) {
+            throw new ResourceNotFoundException(
+                    "customer with id [%s] profile image not found".formatted(customerId)
+            );
+        }
 
         byte[] profileImage = s3Service.getObject(
                 s3Buckets.getCustomer(),
-                "profile-images/%s/%s".formatted(customerId, "TODO")
+                "profile-images/%s/%s".formatted(customerId, customer.profileImageId())
         );
 
         return profileImage;
