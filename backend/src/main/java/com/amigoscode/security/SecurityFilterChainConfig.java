@@ -37,14 +37,14 @@ public class SecurityFilterChainConfig {
                 .cors(Customizer.withDefaults())
                 .authorizeHttpRequests()
                 .requestMatchers(
-                        HttpMethod.POST,
-                        "/api/v1/customers",
-                        "/api/v1/auth/login"
+                        HttpMethod.POST
+//                        "/api/v1/customers", //TODO - this was preventing me from hitting the backend endpoints, kept getting 403's
+//                        "/api/v1/auth/login"
                 )
                 .permitAll()
                 .requestMatchers(
-                        HttpMethod.GET,
-                        "/ping"
+                        HttpMethod.GET
+//                        "/ping"
                 )
                 .permitAll()
                 .requestMatchers(HttpMethod.GET, "/actuator/**")
